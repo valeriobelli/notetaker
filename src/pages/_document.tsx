@@ -1,13 +1,15 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Head, Html, Main, NextScript } from 'next/document'
 
-export default function Document() {
-  return (
-    <Html data-theme="winter">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  );
-}
+const Document = () => (
+	<Html data-theme="winter">
+		<Head>
+			<link rel="icon" href="/favicon.ico" />
+		</Head>
+		<body>
+			<Main />
+			<NextScript />
+		</body>
+	</Html>
+)
+
+export default Document

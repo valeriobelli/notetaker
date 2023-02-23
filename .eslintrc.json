@@ -2,9 +2,11 @@
   "overrides": [
     {
       "extends": [
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:fp-ts/all"
       ],
       "files": ["*.ts", "*.tsx"],
+      "plugins": ["fp-ts"],
       "parserOptions": {
         "project": "tsconfig.json"
       }
